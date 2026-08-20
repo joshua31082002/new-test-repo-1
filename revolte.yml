@@ -1,0 +1,36 @@
+revolte:
+  version: "1"
+  project: FE-test-project
+  appName: new-app
+  env:
+    preview:
+      services:
+        rid_1:
+          type: WEB_APP
+          properties:
+            indexPage: index.html
+            errorPage: 404.html
+    qa:
+      branch: qa
+      services:
+        rid_1:
+          type: WEB_APP
+          properties:
+            indexPage: index.html
+            errorPage: 404.html
+    staging:
+      branch: staging
+      services:
+        rid_1:
+          type: WEB_APP
+          properties:
+            indexPage: index.html
+            errorPage: 404.html
+    production:
+      branch: main
+      services:
+        rid_1:
+          type: WEB_APP
+          properties:
+            indexPage: index.html
+            errorPage: 404.html
