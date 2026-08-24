@@ -1,0 +1,4 @@
+{
+  "command": "mvn spring-boot:run -Dspring-boot.run.arguments=\"--server.port=4173 --server.address=0.0.0.0\"",
+  "port": 4173
+}
