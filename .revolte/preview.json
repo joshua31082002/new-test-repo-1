@@ -1,4 +1,12 @@
 {
-  "command": "npm run dev -- --hostname 0.0.0.0 --port 4173",
+  "version": 2,
+  "install": [
+    {
+      "name": "Node dependencies",
+      "check": "test -x node_modules/.bin/next",
+      "run": "npm ci"
+    }
+  ],
+  "start": "npm run dev -- --hostname 0.0.0.0 --port 4173",
   "port": 4173
 }
