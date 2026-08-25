@@ -1,0 +1,12 @@
+{
+  "name": "northstar-static-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "serve -l 4173 .",
+    "build": "test -f index.html && test -f styles.css && test -f script.js"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
