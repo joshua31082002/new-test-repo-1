@@ -92,6 +92,24 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="proof section-pad" aria-labelledby="proof-title">
+        <div className="proof-heading">
+          <p className="eyebrow">Good company</p>
+          <h2 id="proof-title">The nice things<br /><em>people say.</em></h2>
+        </div>
+        <div className="proof-content">
+          <blockquote>
+            “Sonder + Form helped us find the clearest version of who we are. The work feels unmistakably ours — and our customers felt it immediately.”
+          </blockquote>
+          <p className="quote-attribution">— Maya Chen, co-founder at Morrow House</p>
+          <div className="studio-stats" aria-label="Studio achievements">
+            <div><strong>38</strong><span>brands launched</span></div>
+            <div><strong>12</strong><span>countries reached</span></div>
+            <div><strong>6 yrs</strong><span>making good things</span></div>
+          </div>
+        </div>
+      </section>
+
       <section className="contact section-pad" id="contact" aria-labelledby="contact-title">
         <p className="eyebrow">Have a good feeling?</p>
         <h2 id="contact-title">Let&apos;s make<br /><em>something real.</em></h2>
