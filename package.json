@@ -1,0 +1,26 @@
+{
+  "name": "atelier-north",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --port 4173",
+    "build": "next build",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "^8.5.26",
+    "typescript": "latest"
+  }
+}
