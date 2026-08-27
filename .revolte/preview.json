@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "start": "mvn spring-boot:run -Dspring-boot.run.arguments=\"--server.address=0.0.0.0 --server.port=4173\"",
+  "port": 4173,
+  "install": [
+    {
+      "name": "Java 21 runtime",
+      "check": "mise which java",
+      "run": "mise use java@21"
+    },
+    {
+      "name": "Maven build tool",
+      "check": "command -v mvn",
+      "run": "sudo apt-get update && sudo apt-get install -y maven"
+    },
+    {
+      "name": "Maven dependencies",
+      "check": "test -d target || test -d ~/.m2/repository/org/springframework/boot",
+      "run": "mvn -q -DskipTests package",
+      "inputs": ["pom.xml"]
+    }
+  ],
+  "services": [
+    {
+      "name": "PostgreSQL 16",
+      "check": "command -v psql",
+      "install": "sudo apt-get update && sudo apt-get install -y curl ca-certificates gnupg lsb-release && sudo install -d /usr/share/postgresql-common/pgdg && curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo gpg --dearmor -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.gpg && echo \"deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.gpg] http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main\" | sudo tee /etc/apt/sources.list.d/pgdg.list >/dev/null && sudo apt-get update && sudo apt-get install -y postgresql-16 postgresql-client-16",
+      "start": "sudo pg_ctlcluster 16 main start || true; sudo -u postgres psql -tc \"SELECT 1 FROM pg_roles WHERE rolname = 'catalog'\" | grep -q 1 || sudo -u postgres psql -c \"CREATE ROLE catalog LOGIN PASSWORD 'catalog'\"; sudo -u postgres psql -tc \"SELECT 1 FROM pg_database WHERE datname = 'catalog'\" | grep -q 1 || sudo -u postgres createdb -O catalog catalog",
+      "ready": "pg_isready -h localhost -p 5432"
+    }
+  ]
+}
