@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --color-background: #f8fafc;
+        --color-surface: #ffffff;
+        --color-text: #172033;
+        --color-muted: #526078;
+        --color-accent: #2563eb;
+        --space-1: 0.5rem;
+        --space-2: 1rem;
+        --space-3: 1.5rem;
+        --radius: 0.75rem;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: var(--space-3);
+        background: var(--color-background);
+        color: var(--color-text);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      main {
+        width: min(100%, 40rem);
+        padding: clamp(2rem, 8vw, 4rem);
+        text-align: center;
+        background: var(--color-surface);
+        border-radius: var(--radius);
+        box-shadow: 0 1rem 2.5rem rgb(23 32 51 / 10%);
+      }
+
+      h1 {
+        margin: 0 0 var(--space-1);
+        font-size: clamp(2rem, 6vw, 3rem);
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 0;
+        color: var(--color-muted);
+      }
+
+      section {
+        margin-top: var(--space-3);
+        padding-top: var(--space-3);
+        border-top: 1px solid #e2e8f0;
+        text-align: left;
+      }
+
+      h2 {
+        margin: 0 0 var(--space-1);
+        font-size: 1.25rem;
+      }
+
+      .benefits {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-2);
+        margin-top: var(--space-3);
+        text-align: left;
+      }
+
+      .benefit {
+        padding: var(--space-2);
+        border: 1px solid #e2e8f0;
+        border-radius: 0.5rem;
+      }
+
+      .benefit h3 {
+        margin: 0 0 0.25rem;
+        font-size: 1rem;
+      }
+
+      .benefit p {
+        font-size: 0.9rem;
+      }
+
+      a {
+        display: inline-block;
+        min-height: 44px;
+        margin-top: var(--space-3);
+        padding: 0.65rem 1rem;
+        border-radius: 0.5rem;
+        background: var(--color-accent);
+        color: #ffffff;
+        text-decoration: none;
+        transition: transform 180ms ease, background-color 180ms ease;
+      }
+
+      a:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+      }
+
+      a:focus-visible {
+        outline: 3px solid #93c5fd;
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 600px) {
+        .benefits {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        a {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Build something clear</h1>
+      <p>A thoughtful, responsive foundation for your next idea.</p>
+
+      <section aria-labelledby="about-title">
+        <h2 id="about-title">A solid starting point</h2>
+        <p>This lightweight page gives your idea a clear, polished place to begin.</p>
+      </section>
+
+      <section class="benefits" aria-label="Benefits">
+        <article class="benefit">
+          <h3>Focused</h3>
+          <p>Keep the experience clear and easy to navigate.</p>
+        </article>
+        <article class="benefit">
+          <h3>Flexible</h3>
+          <p>Adapt the foundation as your idea grows.</p>
+        </article>
+        <article class="benefit">
+          <h3>Ready</h3>
+          <p>Start with a polished page built for real use.</p>
+        </article>
+      </section>
+
+      <a href="mailto:hello@example.com">Get in touch</a>
+    </main>
+  </body>
+</html>
