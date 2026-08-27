@@ -111,6 +111,12 @@
         outline-offset: 3px;
       }
 
+      @media (max-width: 600px) {
+        .benefits {
+          grid-template-columns: 1fr;
+        }
+      }
+
       @media (prefers-reduced-motion: reduce) {
         a {
           transition: none;
@@ -126,6 +132,21 @@
       <section aria-labelledby="about-title">
         <h2 id="about-title">About this page</h2>
         <p>A simple, responsive starting point for your next idea.</p>
+      </section>
+
+      <section class="benefits" aria-label="Benefits">
+        <article class="benefit">
+          <h3>Simple</h3>
+          <p>Focused structure that is easy to understand.</p>
+        </article>
+        <article class="benefit">
+          <h3>Responsive</h3>
+          <p>Comfortable to use across screen sizes.</p>
+        </article>
+        <article class="benefit">
+          <h3>Accessible</h3>
+          <p>Clear contrast and keyboard-friendly interactions.</p>
+        </article>
       </section>
 
       <a href="mailto:hello@example.com">Get in touch</a>
