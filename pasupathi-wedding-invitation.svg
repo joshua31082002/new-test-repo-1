@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title description">
+  <title id="title">Pasupathi wedding invitation</title>
+  <desc id="description">An elegant ivory and burgundy wedding invitation for Pasupathi and the bride's name, with placeholders for the date, time, venue, address, and RSVP details.</desc>
+
+  <style>
+    :root {
+      --color-paper: #f8f1e7;
+      --color-paper-deep: #efe2d0;
+      --color-ink: #4a1f29;
+      --color-ink-soft: #765963;
+      --color-gold: #b18a4a;
+      --color-gold-soft: #d7bb83;
+      --color-white: #fffaf2;
+      --font-serif: "Cormorant Garamond", Georgia, serif;
+      --font-sans: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .paper {
+      fill: var(--color-paper);
+    }
+
+    .paper-wash {
+      fill: url(#paper-wash);
+      opacity: 0.34;
+    }
+
+    .border {
+      fill: none;
+      stroke: var(--color-gold);
+    }
+
+    .border-primary {
+      stroke-width: 3;
+    }
+
+    .border-secondary {
+      stroke: var(--color-gold-soft);
+      stroke-width: 1;
+    }
+
+    .ornament {
+      fill: none;
+      stroke: var(--color-gold);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .ornament-soft {
+      fill: var(--color-gold-soft);
+      opacity: 0.72;
+    }
+
+    .eyebrow,
+    .detail-label,
+    .footer-label {
+      fill: var(--color-ink-soft);
+      font-family: var(--font-sans);
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 5px;
+    }
+
+    .eyebrow {
+      fill: var(--color-gold);
+      font-size: 20px;
+      letter-spacing: 8px;
+    }
+
+    .intro,
+    .closing {
+      fill: var(--color-ink-soft);
+      font-family: var(--font-serif);
+      font-size: 27px;
+      letter-spacing: 0.5px;
+    }
+
+    .name {
+      fill: var(--color-ink);
+      font-family: var(--font-serif);
+      font-size: 78px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .ampersand {
+      fill: var(--color-gold);
+      font-family: var(--font-serif);
+      font-size: 50px;
+      font-style: italic;
+    }
+
+    .event-title {
+      fill: var(--color-ink);
+      font-family: var(--font-serif);
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .detail {
+      fill: var(--color-ink);
+      font-family: var(--font-serif);
+      font-size: 28px;
+      letter-spacing: 0.4px;
+    }
+
+    .small-detail {
+      fill: var(--color-ink-soft);
+      font-family: var(--font-sans);
+      font-size: 19px;
+      letter-spacing: 0.6px;
+    }
+
+    .footer {
+      fill: var(--color-ink);
+      font-family: var(--font-sans);
+      font-size: 19px;
+      letter-spacing: 1px;
+    }
+  </style>
+
+  <defs>
+    <filter id="paper-wash" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="9" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.16" />
+      </feComponentTransfer>
+    </filter>
+
+    <linearGradient id="gold-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--color-gold-soft)" />
+      <stop offset="0.5" stop-color="var(--color-gold)" />
+      <stop offset="1" stop-color="var(--color-gold-soft)" />
+    </linearGradient>
+  </defs>
+
+  <rect class="paper" width="1080" height="1350" />
+  <rect class="paper-wash" width="1080" height="1350" />
+
+  <rect class="border border-primary" x="42" y="42" width="996" height="1266" rx="10" />
+  <rect class="border border-secondary" x="60" y="60" width="960" height="1230" rx="6" />
+
+  <g class="ornament" stroke-width="2">
+    <path d="M88 178V92H174" />
+    <path d="M906 92h86v86" />
+    <path d="M88 1172v86h86" />
+    <path d="M992 1172v86h-86" />
+  </g>
+
+  <g transform="translate(540 144)">
+    <path class="ornament" stroke-width="2.5" d="M-118 0C-82-38-42-38 0 0c42-38 82-38 118 0" />
+    <path class="ornament" stroke-width="2.5" d="M-118 0C-82 38-42 38 0 0c42 38 82 38 118 0" />
+    <path class="ornament" stroke-width="2" d="M-64 0c20-22 43-22 64 0 21-22 44-22 64 0" />
+    <circle class="ornament-soft" cx="0" cy="0" r="7" />
+    <path class="ornament" stroke-width="2" d="M-150 0h-38M150 0h38" />
+    <circle class="ornament-soft" cx="-201" cy="0" r="4" />
+    <circle class="ornament-soft" cx="201" cy="0" r="4" />
+  </g>
+
+  <text class="eyebrow" x="540" y="260" text-anchor="middle">WEDDING INVITATION</text>
+
+  <text class="intro" x="540" y="330" text-anchor="middle">With the blessings of our parents and elders,</text>
+  <text class="intro" x="540" y="371" text-anchor="middle">we invite you to celebrate the wedding of</text>
+
+  <text class="name" x="540" y="485" text-anchor="middle">Pasupathi</text>
+  <text class="ampersand" x="540" y="550" text-anchor="middle">and</text>
+  <text class="name" x="540" y="642" text-anchor="middle" font-size="68">[Bride’s Name]</text>
+
+  <g transform="translate(540 700)">
+    <path d="M-270 0H-36M36 0H270" stroke="url(#gold-line)" stroke-width="2" />
+    <path class="ornament" stroke-width="2" d="M-18 0l18-18L18 0 0 18z" />
+  </g>
+
+  <text class="closing" x="540" y="770" text-anchor="middle">Please join us on</text>
+  <text class="event-title" x="540" y="824" text-anchor="middle">[Day], [Date]</text>
+  <text class="detail" x="540" y="870" text-anchor="middle">at [Time]</text>
+
+  <g transform="translate(540 932)">
+    <path class="ornament" stroke-width="1.5" d="M-300 0H-108M108 0H300" />
+    <path class="ornament-soft" d="M-15-10L0-25 15-10 0 5z" />
+  </g>
+
+  <text class="detail-label" x="540" y="1000" text-anchor="middle">MAIN WEDDING CEREMONY</text>
+  <text class="detail" x="540" y="1050" text-anchor="middle">[Venue Name]</text>
+  <text class="small-detail" x="540" y="1087" text-anchor="middle">[Full Address]</text>
+  <text class="small-detail" x="540" y="1120" text-anchor="middle">Muhurtham: [Time]  ·  Followed by [Lunch / Reception]</text>
+
+  <g transform="translate(540 1162)">
+    <path class="ornament" stroke-width="1.5" d="M-238 0H-46M46 0H238" />
+    <circle class="ornament-soft" cx="0" cy="0" r="5" />
+  </g>
+
+  <text class="footer" x="540" y="1215" text-anchor="middle">Your presence and blessings will make our day complete.</text>
+  <text class="footer-label" x="540" y="1256" text-anchor="middle">RSVP  ·  [NAME]  ·  [PHONE NUMBER]</text>
+</svg>
