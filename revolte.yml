@@ -1,0 +1,46 @@
+# TEMPLATE ONLY — the repository currently contains no application source,
+# manifest, build output, or Dockerfile. Replace the assumed values below before deploying.
+revolte:
+  version: '1'
+  project: FE-test-project
+  appName: new-app
+  env:
+    preview:
+      services:
+        rid_1:
+          name: new-app
+          type: WEB_APP
+          entryPoint: src/main.tsx # Assumed; confirm the actual frontend entrypoint.
+          properties:
+            indexPage: index.html
+            errorPage: 404.html
+    qa:
+      branch: qa
+      services:
+        rid_2:
+          name: new-app
+          type: WEB_APP
+          entryPoint: src/main.tsx # Assumed; confirm the actual frontend entrypoint.
+          properties:
+            indexPage: index.html
+            errorPage: 404.html
+    staging:
+      branch: staging
+      services:
+        rid_3:
+          name: new-app
+          type: WEB_APP
+          entryPoint: src/main.tsx # Assumed; confirm the actual frontend entrypoint.
+          properties:
+            indexPage: index.html
+            errorPage: 404.html
+    production:
+      branch: main
+      services:
+        rid_4:
+          name: new-app
+          type: WEB_APP
+          entryPoint: src/main.tsx # Assumed; confirm the actual frontend entrypoint.
+          properties:
+            indexPage: index.html
+            errorPage: 404.html
