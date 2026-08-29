@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #171a16;
+  --muted: #6d746b;
+  --paper: #f6f7f1;
+  --card: #ffffff;
+  --lime: #c8f169;
+  --lime-dark: #9cc83d;
+  --line: #dfe4d8;
+  --orange: #ff8a45;
+  --shadow: 0 18px 48px rgba(24, 34, 20, 0.09);
+}
+@theme inline {
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-lime: var(--lime);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--paper);
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), sans-serif;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+::selection {
+  background: var(--lime);
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-rise {
+  animation: rise 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
