@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "start": "npm run dev -- --hostname 0.0.0.0 --port 4173",
+  "port": 4173,
+  "install": [
+    { "name": "Bun runtime", "check": "mise which bun", "run": "mise use -g bun@1.4.0" },
+    { "name": "Node dependencies", "check": "test -d node_modules", "run": "mise exec bun@1.4.0 -- bun install", "inputs": ["package.json", "bun.lock"] }
+  ]
+}
