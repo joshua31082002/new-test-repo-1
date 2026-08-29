@@ -1,0 +1,10 @@
+node_modules
+.next
+.git
+.env*
+*.log
+core
+core.*
+*.heapsnapshot
+report.*.json
+isolate-*.log
