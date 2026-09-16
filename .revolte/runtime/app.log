@@ -1,0 +1,42 @@
+
+> template-foundation@0.1.0 dev
+> next dev --turbopack --hostname 0.0.0.0 --port 4173
+
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:4173
+- Network:       http://0.0.0.0:4173
+✓ Ready in 243ms
+✓ Running next.config.ts took 22ms
+
+ GET /?_r=5_0 200 in 259ms (next.js: 139ms, application-code: 120ms)
+ GET / 200 in 45ms (next.js: 3ms, application-code: 42ms)
+⚠ Blocked cross-origin request to Next.js dev resource /_next/hmr from "4173-iyxm6w9pirw2wngq9dx8s.sandbox-v2.revolte.io".
+Cross-origin access to Next.js dev resources is blocked by default for safety.
+
+To allow this host in development, add it to "allowedDevOrigins" in next.config.js and restart the dev server:
+
+// next.config.js
+module.exports = {
+  allowedDevOrigins: ['4173-iyxm6w9pirw2wngq9dx8s.sandbox-v2.revolte.io'],
+}
+
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET /?_r=0_0 200 in 44ms (next.js: 3ms, application-code: 42ms)
+ GET / 200 in 57ms (next.js: 3ms, application-code: 54ms)
+ GET / 200 in 35ms (next.js: 2ms, application-code: 33ms)
+ GET / 200 in 52ms (next.js: 2ms, application-code: 50ms)
+ GET / 200 in 39ms (next.js: 2ms, application-code: 37ms)
+ GET / 200 in 32ms (next.js: 1.8ms, application-code: 30ms)
+ GET / 200 in 44ms (next.js: 3ms, application-code: 42ms)
+ GET / 200 in 48ms (next.js: 3ms, application-code: 45ms)
+ GET / 200 in 39ms (next.js: 2ms, application-code: 37ms)
+ GET / 200 in 31ms (next.js: 1.8ms, application-code: 30ms)
+ GET / 200 in 56ms (next.js: 2ms, application-code: 54ms)
+ GET / 200 in 31ms (next.js: 1.8ms, application-code: 29ms)
+ GET / 200 in 33ms (next.js: 3ms, application-code: 30ms)
+ GET / 200 in 36ms (next.js: 1.9ms, application-code: 34ms)
+ GET / 200 in 32ms (next.js: 2ms, application-code: 30ms)
+ GET / 200 in 30ms (next.js: 2ms, application-code: 27ms)
+ GET / 200 in 39ms (next.js: 1.9ms, application-code: 37ms)
+ GET / 200 in 31ms (next.js: 1.9ms, application-code: 29ms)
+ GET / 200 in 29ms (next.js: 1.8ms, application-code: 28ms)
