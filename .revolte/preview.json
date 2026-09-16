@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "start": "node server.js",
+  "port": 4173,
+  "install": [],
+  "services": []
+}
