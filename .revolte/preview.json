@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "start": "serve -l 4173 . --no-clipboard",
+  "port": 4173,
+  "install": [
+    {
+      "name": "static file server",
+      "check": "command -v serve",
+      "run": "npm install --global serve"
+    }
+  ]
+}
