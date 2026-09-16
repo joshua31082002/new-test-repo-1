@@ -1,0 +1,11 @@
+# Node and preview artifacts
+node_modules/
+.cache/
+.npm/
+
+# Crash artifacts
+core
+core.*
+*.heapsnapshot
+report.*.json
+isolate-*.log

@@ -1,0 +1,103 @@
+:root {
+  color-scheme: light;
+  --color-background: #f4f1ea;
+  --color-panel: #fffdf8;
+  --color-ink: #17211b;
+  --color-muted: #617067;
+  --color-accent: #2f6f5e;
+  --color-accent-soft: #dbe9df;
+  --shadow-panel: 0 24px 60px rgb(23 33 27 / 12%);
+  --radius-panel: 24px;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-ink);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.page-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: var(--space-4);
+}
+
+.welcome-panel {
+  width: min(100%, 38rem);
+  padding: clamp(2rem, 8vw, 5rem);
+  background: var(--color-panel);
+  border: 1px solid rgb(47 111 94 / 18%);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--shadow-panel);
+  animation: panel-enter 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-2);
+  color: var(--color-accent);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-size: clamp(3.5rem, 13vw, 7rem);
+  font-weight: 400;
+  letter-spacing: -0.07em;
+  line-height: 0.9;
+  overflow-wrap: break-word;
+}
+
+.supporting-copy {
+  max-width: 28rem;
+  margin: var(--space-3) 0 0;
+  color: var(--color-muted);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.6;
+}
+
+@keyframes panel-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-shell {
+    padding: var(--space-2);
+  }
+
+  .welcome-panel {
+    padding: var(--space-4) var(--space-3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-panel {
+    animation: none;
+  }
+}
