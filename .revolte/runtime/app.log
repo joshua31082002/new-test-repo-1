@@ -1,0 +1,31 @@
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:4173
+- Network:       http://0.0.0.0:4173
+✓ Ready in 257ms
+✓ Running next.config.ts took 18ms
+
+ GET /?_r=1_0 200 in 1761ms (next.js: 1660ms, application-code: 101ms)
+⚠ Blocked cross-origin request to Next.js dev resource /_next/hmr from "4173-ill6rpa1ulbk0eex781js.sandbox-v2.revolte.io".
+Cross-origin access to Next.js dev resources is blocked by default for safety.
+
+To allow this host in development, add it to "allowedDevOrigins" in next.config.js and restart the dev server:
+
+// next.config.js
+module.exports = {
+  allowedDevOrigins: ['4173-ill6rpa1ulbk0eex781js.sandbox-v2.revolte.io'],
+}
+
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET /?_r=2_0 200 in 39ms (next.js: 5ms, application-code: 35ms)
+ GET /?_r=3_0 200 in 33ms (next.js: 2ms, application-code: 31ms)
+ GET /?_r=4_0 200 in 26ms (next.js: 2ms, application-code: 24ms)
+ GET /?_r=5_0 200 in 25ms (next.js: 1.7ms, application-code: 23ms)
+ GET / 200 in 25ms (next.js: 1.8ms, application-code: 23ms)
+ GET /?_r=5_0 200 in 26ms (next.js: 2ms, application-code: 24ms)
+ GET / 200 in 25ms (next.js: 1.9ms, application-code: 23ms)
+ GET / 200 in 29ms (next.js: 3ms, application-code: 26ms)
+ GET /?_r=5_0 200 in 28ms (next.js: 2ms, application-code: 25ms)
+ GET / 200 in 29ms (next.js: 2ms, application-code: 27ms)
+ GET /?_r=5_0 200 in 29ms (next.js: 1.8ms, application-code: 27ms)
+ GET /?_r=5_0 200 in 25ms (next.js: 1.7ms, application-code: 23ms)
+ GET / 200 in 27ms (next.js: 1.7ms, application-code: 25ms)
