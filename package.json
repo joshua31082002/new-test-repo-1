@@ -1,0 +1,9 @@
+{
+  "name": "hello-world-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal Hello World HTML page.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
